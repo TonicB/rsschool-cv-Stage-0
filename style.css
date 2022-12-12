@@ -21,10 +21,6 @@ html {
   src: url(assets/fonts/RobotoMono-VariableFont_wght.ttf); /*woff а не ttf*/
 }
 
-p {
-  padding: 0.4em 0;
-}
-
 body {
   display: flex;
   flex-direction: column;
