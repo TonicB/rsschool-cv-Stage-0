@@ -1,0 +1,169 @@
+:root {
+  --darkcyan: #008a8a;
+  --white: #ffffff;
+  --darkBlue: #040353;
+  --black: #000000;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+/* не расширяет блок, в случае изменения отступов, а отступы все формируются внутри блока, ширина остается постоянной */
+
+html {
+  scroll-behavior: smooth;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url(assets/fonts/RobotoMono-Italic-VariableFont_wght.ttf);
+  src: url(assets/fonts/RobotoMono-VariableFont_wght.ttf); /*woff а не ttf*/
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.5;
+}
+
+.header {
+  background-color: var(--darkcyan);
+}
+
+.footer {
+  background-color: var(--darkcyan);
+}
+
+.container {
+  max-width: 1440px;
+  min-width: 320px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.section {
+  width: 50%;
+}
+
+.section-profile {
+  border-bottom: 0.5rem solid var(--darkcyan);
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .section {
+    width: 100%;
+  }
+  .section-profile {
+    text-align: left;
+  }
+}
+
+.myFoto {
+  width: 180px;
+  height: 180px;
+}
+
+.section-foto {
+  display: flex;
+  justify-content: center;
+  border-bottom: 0.5rem solid var(--darkcyan);
+}
+
+.nav-list {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  list-style: none;
+  flex-wrap: wrap;
+  line-height: 1.2;
+}
+
+.nav-link {
+  padding: 0 1em;
+  line-height: 2.5em;
+  text-decoration: none;
+  font-size: 20px;
+  color: var(--white);
+  transition: 0.1s;
+}
+
+.nav-item a:hover {
+  text-decoration: underline;
+  color: var(--darkBlue);
+}
+
+.main-container {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 3em;
+}
+
+.section-title {
+  letter-spacing: 7px;
+}
+
+.item {
+  line-height: 2;
+  list-style: none;
+}
+
+.section-contacts,
+.section-aboutMe,
+.section-mySkills,
+.section-codeExample {
+  border-bottom: 0.1em solid var(--darkcyan);
+}
+
+.icon {
+  width: 1em;
+  height: 1em;
+}
+
+.contacts-link {
+  text-decoration: none;
+  padding-left: 1em;
+  transition: 0.1s;
+  color: var(--black);
+}
+
+.contacts-item a:hover {
+  text-decoration: underline;
+  color: var(--darkcyan);
+}
+
+.contacts-address {
+  padding-left: 1em;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-item {
+  font-size: 1.2rem;
+  color: var(--white);
+  padding: 0 1em;
+}
+
+.footer-link {
+  text-decoration: none;
+  margin-right: auto;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+  color: var(--darkBlue);
+}
+
+.logoRs {
+  width: 6rem;
+  height: 3rem;
+  padding: 0;
+}
