@@ -1,1 +1,1 @@
-https://github.com/TonicB/rsschool-cv/blob/rsschool-cv-html/index.html
+https://TonicB.github.io/rsschool-cv/index.html
