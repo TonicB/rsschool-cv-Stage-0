@@ -21,65 +21,45 @@ I am a responsible, reliable, punctual and self-organized person. I have a techn
 
 ##### My skills:
 
-- Github Basics
-- VS Code, Sublime Text Basics
+- Git
 - HTML, CSS Basics
 - PHP Basics
-- JavaScript Basics
-- Android Studio Basics
-- SEO Basics
+- JavaScript/Typescript
+- Node JS
+- Webpack
+- React
 
 ---
 
 ##### Code example:
 
 ```
-<?php
-session_start(); # стартуем сессию
-?>
+document.querySelector('.filter').addEventListener('mouseup', () => {
+  FILTER.classList.add('filter_display_none')
+  typingTitle()
 
-<!DOCTYPE html>
-<html>
-<head>
-	<title>IQ NINJA</title>
-	<link rel="stylesheet" type="text/css" href="index_style.css">
-</head>
-<body id="index_body">
-
-		<h1 align="center">IQ NINJA</h1>
-		<div id=block_for_message align="center" class="simpleText">  <!--div для вывода сообщения об ошибке-->
-	<? if (isset($_SESSION["error_messages"]) && !empty($_SESSION["error_messages"])){
-		echo $_SESSION["error_messages"];
-		unset($_SESSION["error_messages"]);
-	}
-	?>
-</div>
-<div id=start_battle>
-	<form action="login.php" method="post"> <!--файл login.php это обработчик формы-->
-		Login <input id="login" type="text" name="login" required="required" maxlength="25"><br />
-		<br />
-		Password <input id="password" type="password" name="password" required="required" maxlength="32"><br /><br />
-		<input type="submit" name="auth_button" value="Вход" /><br /><br />
-	</form>
-		<input type="button" name="GO" value="Регистрация" onclick='location.href="reg.php"' />
-
-</div>
-
-
-</body>
-</html>
+  // Набор текста с клавиатуры
+  document.addEventListener('keydown', (e) => {
+    if (e.code === 'Enter') {
+      playSound('enter')
+    } else {
+      playSound('press')
+    }
+    e.preventDefault();
+    pressButton(e.code)
+  })
 ```
 
 ---
 
-##### Courses:
+##### My projects:
 
-- Introduction to SEO in 30 days, Devaka (completed)
-- RS Schools Course «JavaScript/Front-end. Stage 0» (in progress)
+https://rolling-scopes-school.github.io/tonicb-JSFE2023Q1/shelter/
+https://tonicb.github.io/virtual-keyboard/
 
 ---
 
 ##### Languages:
 
-- English - A2
+- English - A2/B1
 - Russian - Native
